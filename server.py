@@ -1,7 +1,7 @@
 from fastapi import FastAPI, WebSocket
 from typing import List
 import uvicorn
-import gemini
+import scripts.gemini as gemini
 
 app = FastAPI()
 

@@ -9,6 +9,8 @@ gemKey = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=gemKey)
 
 def send_message(message, chat):
+    """Send a message to the chat model and return the response"""
     print(f"Received message: {message}")
     response = chat.send_message(message)
     return response
+

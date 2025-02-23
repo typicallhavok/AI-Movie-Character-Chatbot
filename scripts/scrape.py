@@ -64,6 +64,10 @@ def scrape_website(initial_url, first_link_selector, second_link_selector, final
                 second_link = second_soup.select_one(second_link_selector)
                 if not second_link:
                     continue
+                if second_link.text.strip()[1:-8] in exists:
+                    with open("exists_log.txt", 'a', encoding='utf-8') as f:
+                        f.write(f"{datetime.now()}: {first_url} exists\n")
+                    continue
                 print(f"Processing: {second_link.text.strip()}")
                 second_url = second_link.get('href')
                 if not second_url:
@@ -98,6 +102,8 @@ def scrape_website(initial_url, first_link_selector, second_link_selector, final
                 
             except Exception as e:
                 print(f"Error processing {first_url}: {e}")
+                with open("error_log.txt", 'a', encoding='utf-8') as f:
+                    f.write(f"{datetime.now()}: {first_url}\n")
                 continue
                 
         return successful_scrapes
@@ -107,6 +113,11 @@ def scrape_website(initial_url, first_link_selector, second_link_selector, final
         return 0
 
 if __name__ == "__main__":
+    exists=[]
+    for filename in os.listdir("../movie_scripts"):
+        if filename.endswith('.json'):
+            exists.append(filename[:-5])
+    print(len(exists))
     initial_url = "https://imsdb.com/all-scripts.html"
     first_link_selector = "p a"
     second_link_selector = "p a"

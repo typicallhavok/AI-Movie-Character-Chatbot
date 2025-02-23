@@ -1,25 +1,17 @@
 import os
-import google.genai as genai
-import chromadb
-from dotenv import load_dotenv
 import json
+from dotenv import load_dotenv
+from pymongo import MongoClient
 from tqdm import tqdm
 import concurrent.futures
 import time
 
 load_dotenv()
 
-# Configure Gemini API
-gemini_client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-
-# Initialize ChromaDB
-client = chromadb.PersistentClient(path="../chroma")
-collection = client.get_or_create_collection("movie_scripts")
-
-# Function to generate embeddings using Gemini
-def get_gemini_embedding(text):
-    embedding = gemini_client.models.embed_content(model="text-embedding-004", contents=text)
-    return embedding.embeddings[0].values
+# Initialize MongoDB
+mongo_client = MongoClient(os.getenv("MONGODB_URI", "mongodb://localhost:27017/"))
+db = mongo_client.movie_database
+dialogues_collection = db.dialogues
 
 # Extract dialogues from JSON
 def extract_dialogues_from_json(json_data):
@@ -51,21 +43,20 @@ def process_single_dialogue(args):
     dialogue_id, movie_title, speaker, dialogue = args
     
     try:
-        # Check if the embedding already exists in ChromaDB
-        existing_results = collection.get(ids=[dialogue_id], include=["embeddings"])
+        # Check if the dialogue already exists in MongoDB
+        existing_document = dialogues_collection.find_one({"_id": dialogue_id})
 
-        if existing_results and "embeddings" in existing_results and len(existing_results["embeddings"]) > 0:
+        if existing_document:
             return f"Skipped existing: {movie_title}, Speaker: {speaker}"
         else:
-            # Generate new embedding
-            embedding = get_gemini_embedding(dialogue)
-
-            # Store new embedding in ChromaDB
-            collection.add(
-                ids=[dialogue_id],  
-                embeddings=[embedding],
-                metadatas=[{"title": movie_title, "speaker": speaker, "dialogue": dialogue}]
-            )
+            # Store new document in MongoDB
+            dialogues_collection.insert_one({
+                "_id": dialogue_id,
+                "title": movie_title,
+                "speaker": speaker,
+                "dialogue": dialogue,
+                "created_at": time.time()
+            })
             
             return f"Processed: {movie_title}, Speaker: {speaker}"
     except Exception as e:
@@ -78,7 +69,11 @@ def process_batch(batch):
         results.extend(batch_results)
     return results
 
-def store_json_dialogues_in_chroma(folder_path, batch_size=20):
+def store_json_dialogues_in_mongodb(folder_path, batch_size=20):
+    # Create index for faster queries
+    dialogues_collection.create_index("title")
+    dialogues_collection.create_index("speaker")
+    
     # Get all JSON files
     json_files = [f for f in os.listdir(folder_path) if f.endswith(".json")]
     print(f"Found {len(json_files)} JSON files")
@@ -110,9 +105,9 @@ def store_json_dialogues_in_chroma(folder_path, batch_size=20):
         batch_results = process_batch(batch)
         results.extend(batch_results)
         
-        # Add a small delay between batches to avoid overwhelming the API
+        # Add a small delay between batches
         if i + batch_size < total_dialogues:
-            time.sleep(1)
+            time.sleep(0.5)
     
     # Count processed vs skipped
     processed = sum(1 for r in results if r.startswith("Processed"))
@@ -129,4 +124,4 @@ def store_json_dialogues_in_chroma(folder_path, batch_size=20):
 
 if __name__ == "__main__":
     # Run the script with batch processing
-    store_json_dialogues_in_chroma("../movie_scripts", batch_size=20)
+    store_json_dialogues_in_mongodb("../movie_scripts", batch_size=20)

@@ -176,7 +176,10 @@ chroma_db/*
 movie_scripts/
 
 #mongo db
-mongodata/
+mongodb/
 
-#requirements(Temporary)
+#Temporary
 requirements.txt
+backprocess.py
+check_collections.py
+chroma/

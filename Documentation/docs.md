@@ -105,7 +105,7 @@ This document provides details about the available API endpoints, their usage, a
 
 **Description:** Handles real-time messaging via WebSockets.
 
-![Websocket Postman collection](https://www.postman.com/dhiq33/workspace/websocket-ai-chatbot)
+[Websocket Postman collection](https://www.postman.com/dhiq33/workspace/websocket-ai-chatbot)
 
 **Screenshot Placeholder:**
 

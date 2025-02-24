@@ -1,0 +1,336 @@
+Found 335 JSON files
+10 Things I Hate About You
+12 and Holding
+12 Monkeys
+12 Years a Slave
+12
+127 Hours
+17 Again
+2001 A Space Odyssey
+2012
+28 Days Later
+500 Days of Summer
+A Few Good Men
+A Quiet Place
+Ace Ventura Pet Detective
+Ad Astra
+Adaptation
+Addams Family The
+Air Force One
+Aladdin
+Alien
+Aliens
+All About Eve
+Almost Famous
+Amadeus
+American Beauty
+American Gangster
+American History X
+American Hustle
+American Pie
+American Psycho
+American Sniper
+American Werewolf in London
+Anastasia
+Annie Hall
+Antz
+Apartment The
+Apocalypse Now
+Apollo 13
+Argo
+Armageddon
+Army of Darkness
+As Good As It Gets
+Austin Powers - International Man of Mystery
+Avatar
+Avengers Endgame
+Avengers The 2012
+Bad Boys
+Bad Santa
+Barbie
+Basic Instinct
+Batman
+Beauty and the Beast
+Being John Malkovich
+Big Fish
+Big Lebowski The
+Black Panther
+Black Swan
+BlacKkKlansman
+Blade Runner
+Blade
+Blow
+Blue Velvet
+Bonnie and Clyde
+Boogie Nights
+Braveheart
+Brazil
+Breakfast Club The
+Bridesmaids
+Bruce Almighty
+Burn After Reading
+Casino
+Cast Away
+Catch Me If You Can
+Charade
+Charlies Angels
+Chinatown
+Chronicles of Narnia The Lion the Witch and the Wardrobe
+Citizen Kane
+Clerks
+Clueless
+Coco
+Cold Mountain
+Commando
+Constantine
+Coraline
+Corpse Bride
+Crazy Stupid Love
+Crouching Tiger Hidden Dragon
+Cruel Intentions
+Dallas Buyers Club
+Dances with Wolves
+Dark Knight Rises The
+Dawn of the Dead
+Dead Poets Society
+Deadpool
+Deer Hunter The
+Departed The
+Despicable Me 2
+Devil Wears Prada The
+Die Hard
+Django Unchained
+Do The Right Thing
+Dog Day Afternoon
+Donnie Brasco
+Doors The
+Double Indemnity
+Dumb and Dumber
+Dune
+Edward Scissorhands
+Election
+Elvis
+Enemy of the State
+English Patient The
+Erin Brockovich
+Escape From New York
+ET
+Eternal Sunshine of the Spotless Mind
+Ex Machina
+Face Off
+Fargo
+Fast Times at Ridgemont High
+Fear and Loathing in Las Vegas
+Ferris Buellers Day Off
+Fight Club
+Finding Nemo
+Forrest Gump
+Frankenstein
+French Connection The
+Frozen
+Fugitive The
+Gandhi
+Gangs of New York
+Garden State
+Get Out
+Ghostbusters
+Gladiator
+Godfather
+Good Will Hunting
+Gran Torino
+Gravity
+Great Gatsby The
+Green Mile The
+Gremlins
+Groundhog Day
+Guardians of the Galaxy Vol 2
+Halloween
+Hancock
+Hangover The
+Hannibal
+Harold and Kumar Go to White Castle
+Heat
+Heathers
+Help The
+Her
+High Fidelity
+Hunt for Red October The
+Hurt Locker The
+I Robot
+Inception
+Independence Day
+Indiana Jones and the Raiders of the Lost Ark
+Inglourious Basterds
+Insidious
+Interstellar
+Interview with the Vampire
+Into the Wild
+Italian Job The
+Its a Wonderful Life
+Jackie Brown
+Jaws
+Jerry Maguire
+JFK
+John Wick
+Joker
+Juno
+Jurassic Park
+Killers of the Flower Moon
+King Kong
+Kings Speech The
+Knocked Up
+Kramer vs Kramer
+Kung Fu Panda
+LA Confidential
+La La Land
+Labyrinth
+Last of the Mohicans The
+Last Samurai The
+Legally Blonde
+Les Miserables
+Liar Liar
+Life of Pi
+Limitless
+Lincoln
+Little Mermaid The
+Lock Stock and Two Smoking Barrels
+Logan
+Looper
+Lord of the Rings Fellowship of the Ring The
+Lost in Translation
+Machete
+Mad Max 2 The Road Warrior
+Malcolm X
+Man on the Moon
+Manchurian Candidate The
+Martian The
+Mask The
+Matrix The
+Mean Streets
+Memento
+Men in Black
+Midnight Express
+Midnight in Paris
+Milk
+Minority Report
+Misery
+Mission Impossible
+Moneyball
+Moon
+Moonrise Kingdom
+Mulan
+Mummy The
+My Best Friends Wedding
+Napoleon
+Natural Born Killers
+Never Been Kissed
+Nightmare Before Christmas The
+No Country for Old Men
+Notting Hill
+Oceans Eleven
+Office Space
+One Flew Over the Cuckoos Nest
+Oppenheimer
+Ordinary People
+Out of Sight
+Panic Room
+Pearl Harbor
+Philadelphia
+Pianist The
+Pineapple Express
+Pirates of the Caribbean
+Platoon
+Point Break
+Poor Things
+Predator
+Prestige The
+Pretty Woman
+Pride and Prejudice
+Princess Bride The
+Psycho
+Pulp Fiction
+Raging Bull
+Raising Arizona
+Rear Window
+Rebel Without A Cause
+Reservoir Dogs
+Revenant The
+Rise of the Planet of the Apes
+Robin Hood Prince of Thieves
+Rock The
+Rocky
+Room
+Rush Hour
+Saving Private Ryan
+Saw
+Scarface
+Schindlers List
+Scott Pilgrim vs the World
+Scream
+Se7en
+Sense and Sensibility
+Shawshank Redemption The
+Sherlock Holmes
+Shining The
+Shrek
+Sicario
+Signs
+Silence of the Lambs
+Silver Linings Playbook
+Sixth Sense The
+Sleepless in Seattle
+Slumdog Millionaire
+Snatch
+Social Network The
+Source Code
+Spider-Man
+Star Trek II The Wrath of Khan
+Star Trek
+Star Wars The Empire Strikes Back
+Straight Outta Compton
+Strangers on a Train
+Super 8
+Superbad
+Sweeney Todd The Demon Barber of Fleet Street
+Taxi Driver
+Ted
+Teenage Mutant Ninja Turtles Mutant Mayhem
+Tenet
+Terminator 2 Judgement Day
+Terminator
+Theres Something About Mary
+Thor
+Titanic
+Tombstone
+Top Gun
+Total Recall
+Town The
+Toy Story
+Traffic
+Training Day
+Trainspotting
+Tropic Thunder
+True Grit
+True Lies
+Truman Show The
+Twilight
+Twins
+Twister
+Unbreakable
+Up
+Usual Suspects The
+V for Vendetta
+Vanilla Sky
+Wall Street
+Wall-E
+Wanted
+War of the Worlds
+Watchmen
+Whiplash
+Wolf of Wall Street The
+Wonder Woman
+Wonka
+X-Men
+Youve Got Mail
+Zero Dark Thirty
+Zootopia

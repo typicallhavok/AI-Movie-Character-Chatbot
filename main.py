@@ -37,6 +37,7 @@ async def websocket_endpoint(websocket: WebSocket):
     chat_window_id = chat_history.create_chat_window(username)
     movie_title = ""
     context = ""
+    await websocket.send_text("Enter any movie dialogue")
     try:
         while True:
             query = await websocket.receive_text()

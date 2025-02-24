@@ -20,6 +20,10 @@ and the movie script to understand the situation and respond accordingly.
 
 active_connections: List[WebSocket] = []
 
+@app.get("/")
+async def health_check():
+    return "successful"
+
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
@@ -28,7 +32,7 @@ async def websocket_endpoint(websocket: WebSocket):
         system_instruction=sys_inst))
     active_connections.append(websocket)
 
-    websocket.send_text("Enter username: ")
+    await websocket.send_text("Enter username: ")
     username = await websocket.receive_text()
     chat_window_id = chat_history.create_chat_window(username)
     movie_title = ""
@@ -55,7 +59,7 @@ async def websocket_endpoint(websocket: WebSocket):
                 # for chunk in response.text:
                 #     await websocket.send_text(chunk)
             except Exception as err:
-                websocket.send_text(str(err))
+                await websocket.send_text(str(err))
 
             chat_history.add_message(chat_window_id, message, gem_response.text)
             await websocket.send_text(gem_response.text)

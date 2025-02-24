@@ -7,12 +7,19 @@ This document provides details about the available API endpoints, their usage, a
 
 ## **Tech Stack used**
 > Fastapi : To host the server
+
 > Gemini : LLM used for chatting
+
 > Pinecone : Vector Database to store embeddings
+
 > MongoDB : Database to store chats and history
+
 > Redis : Cache handling
+
 > BeautifulSoup : To scrap movie scripts from the websites
+
 > Hugging Face's BAAI/bge-large-en-v1.5 Sentence transformer : To get embeddings
+
 > Locust : For testing large amount of requests
 
 ---

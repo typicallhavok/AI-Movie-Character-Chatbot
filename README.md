@@ -22,6 +22,10 @@ pip install -r requirements.txt
 uvicorn main:app
 ```
 
+# Documentation
+
+[Api Docs](./Documentation/docs.md)
+
 # Movies
 
 Check movies.txt for all the movies that are available to choose from

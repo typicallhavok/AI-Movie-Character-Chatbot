@@ -183,3 +183,4 @@ requirements.txt
 backprocess.py
 check_collections.py
 chroma/
+.vercel

@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "a569767a-68cb-47d2-975f-22c95484d158",
+		"name": "AI movie character chatbot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37988774"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/get_user_chats?user_id=Havok",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/get_user_chats?user_id=Havok",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"get_user_chats"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "Havok"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
